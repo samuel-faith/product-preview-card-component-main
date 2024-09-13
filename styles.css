@@ -1,0 +1,154 @@
+:root {
+    --price-and-button-color: #3c8067;
+    --body-color: #f2ebe3;
+    --header-color: #1c232b;
+    --text-color: #6c7289;
+    --background-color: #fff;
+    --body-font: "Montserrat", Sans-serif;
+    --header-font: "Fraunces", serif;
+}
+
+body {
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 350px 300px;
+    margin-bottom: 3rem;
+    width: 90%;
+    max-width: fit-content;
+}
+
+.description {
+    background-color: var(--background-color);
+    padding: 1rem 1.5rem 0 2rem;
+    border-radius: 0 .5rem .5rem 0;
+    margin: 0 0 .2rem -2rem;
+}
+
+img {
+    height: 450px;
+    width: 320px;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    margin: -1rem 0 0 0;
+}
+
+.old-price {
+    margin: 2.2rem 0rem 0 1.5rem;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.product-name {
+    font-family: var(--header-font);
+    padding: 0 1rem 0 0;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.current-price {
+    color: var(--price-and-button-color);
+    font-family: var(--header-font);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background-color: var(--price-and-button-color);
+    border-radius: .5rem;
+    padding: 0.8rem;
+    color: var(--background-color);
+    font-family: var(--body-font);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button i {
+    margin-right: .55rem;
+}
+
+button:hover {
+    background-color: #1c232b;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--price-and-button-color); 
+}
+
+@media (max-width:600px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: fit-content;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        margin: 2rem 0 2rem;
+    }
+
+    .description {
+        width: 250px;
+        padding: 0 2rem .8rem 2rem;
+        margin: 0;
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+    .price {
+        margin: -2rem 0 0 0;
+    }
+
+    button {
+        margin: -.5rem 0 1rem;
+    }
+
+    picture, img {
+        margin: 0 0 -.2rem 0;
+        width: 314px;
+        text-align: center;
+        height: auto;
+        border-radius: .5rem .5rem 0 0;    
+    }
+    .product-name {
+        font-size: 1.5rem;
+    }
+    .product-type {
+        margin: 1.5rem 0 .5rem 0;
+        font-size: .7rem;
+    }
+
+    .product-description {
+        font-size: .8rem;
+    }
+}
