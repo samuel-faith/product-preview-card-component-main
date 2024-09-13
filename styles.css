@@ -134,7 +134,7 @@ button:hover {
     }
 
     button {
-        margin: -.5rem 0 1rem;
+        margin: -.4rem 0 1rem 0;
     }
 
     picture, img {
@@ -154,5 +154,10 @@ button:hover {
 
     .product-description {
         font-size: .8rem;
+        padding: 0;
+    }
+
+    .current-price {
+        margin: rem 0 1rem 0;
     }
 }
