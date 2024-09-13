@@ -61,9 +61,13 @@ p {
 
 .product-name {
     font-family: var(--header-font);
-    padding: 0 1rem 0 0;
+    padding: 0 2rem 0 0;
     font-size: 2rem;
     margin: 0;
+}
+
+.product-description {
+    padding: 0 2rem 0 0;
 }
 
 .current-price {
